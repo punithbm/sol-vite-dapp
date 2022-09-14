@@ -57,7 +57,7 @@ function App() {
             const resp = await provider.connect();
             // const resp = await provider.request({ method: 'connect' });
             console.log('connect testing ', resp);
-            const prvDecode = new Uint8Array([42, 71, 43, 13, 67, 128, 203, 52, 224, 205, 157, 169, 247, 215, 97, 186, 215, 215, 14, 155, 77, 64, 164, 205, 160, 59, 49, 102, 28, 231, 43, 142, 92, 177, 72, 65, 66, 1, 104, 56, 20, 167, 81, 135, 5, 234, 207, 129, 173, 158, 157, 249, 22, 129, 34, 167, 85, 172, 200, 118, 36, 50, 116, 193]);
+            const prvDecode = new Uint8Array([42, 71, 43, 7, 215, 97, 186, 215, 215, 14, 155, 77, 64, 164, 205, 160, 59, 49, 102, 28, 231, 43, 142, 92, 177, 72, 65, 66, 1, 104, 56, 20, 167, 81, 135, 5, 234, 207, 129, 173, 158, 157, 249, 22, 129, 34, 167, 85, 172, 200, 118, 36, 50, 116, 193]);
             const keypair = Keypair.fromSecretKey(prvDecode);
             const pubKey = new PublicKey('8SXLP6NLixTDz3DssBXbU3sw8rHHVmmfDLxHCZwH6zhZ');
             const network = 'https://api.mainnet-beta.solana.com';
